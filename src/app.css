@@ -84,7 +84,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -94,6 +95,7 @@ video {
 }
 
 body {
+	min-height: 100vh;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
@@ -145,4 +147,33 @@ q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+:root {
+	--primary-bg-color: #000;
+	--font-color-white: #fff;
+	--button-bg: #505050;
+	--max-width: 130rem;
+
+	font-size: 10px;
+}
+
+.wrapper {
+	padding-inline: calc((100vw - var(--max-width)) / 2);
+}
+
+.button {
+	padding: 0.5rem 1.5rem;
+	width: max-content;
+	background-color: var(--button-bg);
+	color: var(--font-color-white);
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.diagonal-line {
+	width: 3rem;
+	border-bottom: 0.2rem solid #505050;
+	transform: rotate(-65deg);
+	transform-origin: top left;
 }
