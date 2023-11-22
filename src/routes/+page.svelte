@@ -1,5 +1,5 @@
 <script lang="ts">
-	import TopBar from "$lib/components/TopBar/TopBar.svelte";
+	import TopBar from "$lib/components/TopBar.svelte";
 </script>
 
 <svelte:head>
