@@ -151,9 +151,18 @@ table {
 
 :root {
 	--primary-bg-color: #000;
+	--secondary-bg-color: repeating-linear-gradient(-45deg,
+			#262628,
+			#262628 0.4rem,
+			#252527 0.5rem,
+			#252527 1rem);
+	--top-to-bottom-overlay: linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 50%);
+	--bottom-to-top-overlay: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 70%);
 	--primary-red-color: #fe3652;
 	--secondary-red-color: #7f1b29;
+	--primary-gray-color: #3b3b3c;
 	--font-color-white: #fff;
+	--font-color-black: #000;
 	--font-color-gray: #828586;
 	--button-bg: #505050;
 	--max-width: 130rem;
@@ -181,4 +190,10 @@ table {
 	border-bottom: 0.2rem solid #505050;
 	transform: rotate(-65deg);
 	transform-origin: top left;
+}
+
+.overlay {
+	position: absolute;
+	inset: 0;
+	background: var(--top-to-bottom-overlay);
 }
