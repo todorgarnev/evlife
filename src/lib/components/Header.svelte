@@ -103,7 +103,7 @@
 		margin-inline: 0.5rem;
 		position: relative;
 		top: 2rem;
-		left: 1rem;
+		left: 0.8rem;
 		width: 3.5rem;
 		border-bottom-width: 0.3rem;
 	}
