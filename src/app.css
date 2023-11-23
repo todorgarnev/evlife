@@ -96,7 +96,7 @@ button {
 
 body {
 	min-height: 100vh;
-	line-height: 1.5;
+	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -148,9 +148,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 :root {
 	--primary-bg-color: #000;
+	--primary-red-color: #fe3652;
+	--secondary-red-color: #7f1b29;
 	--font-color-white: #fff;
+	--font-color-gray: #828586;
 	--button-bg: #505050;
 	--max-width: 130rem;
 

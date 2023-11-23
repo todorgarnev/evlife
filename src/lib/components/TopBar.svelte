@@ -1,6 +1,4 @@
 <script lang="ts">
-	// import "./styles.css";
-
 	const topics = ["tesla", "EVРевюта", "EVMasters", "батерии", "зареждане", "cyberTruck"];
 	const menu = ["за нас", "партньори", "контакти", "общи условия"];
 </script>
@@ -34,7 +32,6 @@
 		padding-block: 1rem;
 		display: flex;
 		align-items: center;
-		grid-template-columns: repeat(4, auto);
 		background-color: var(--primary-bg-color);
 		color: var(--font-color-white);
 		font-size: 1.3rem;
