@@ -68,7 +68,7 @@
 		position: relative;
 		text-align: center;
 		background-color: yellowgreen;
-		border-bottom-right-radius: 5rem;
+		border-bottom-right-radius: var(--border-bottom-right-radius-2);
 	}
 
 	.card-overlay {

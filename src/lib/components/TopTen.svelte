@@ -90,7 +90,7 @@
 		display: flex;
 		gap: 3.5rem;
 		background-color: var(--primary-bg-color);
-		border-bottom-right-radius: 3rem;
+		border-bottom-right-radius: var(--border-bottom-right-radius-1);
 	}
 
 	.card .number {

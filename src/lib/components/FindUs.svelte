@@ -47,9 +47,9 @@
 	}
 
 	.card {
-		padding: 8rem 4.5rem;
+		padding: 7rem 4.5rem;
 		background-color: var(--primary-bg-color);
-		border-bottom-right-radius: 5rem;
+		border-bottom-right-radius: var(--border-bottom-right-radius-1);
 		text-align: center;
 	}
 

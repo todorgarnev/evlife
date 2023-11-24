@@ -28,7 +28,7 @@
 		position: inherit;
 		width: 96rem;
 		height: 54rem;
-		border-bottom-right-radius: 10rem;
+		border-bottom-right-radius: var(--border-bottom-right-radius-3);
 		background-color: dodgerblue;
 		z-index: 1;
 	}
@@ -42,14 +42,14 @@
 		right: -4rem;
 		border-bottom: 2rem solid var(--primary-gray-color);
 		border-right: 2rem solid var(--primary-gray-color);
-		border-bottom-right-radius: 13rem;
+		border-bottom-right-radius: var(--border-bottom-right-radius-4);
 	}
 
 	.image-container > div {
 		width: 100%;
 		height: 100%;
 		background: var(--bottom-to-top-overlay);
-		border-bottom-right-radius: 10rem;
+		border-bottom-right-radius: var(--border-bottom-right-radius-3);
 	}
 
 	.info-container {
@@ -59,7 +59,7 @@
 		right: calc((100vw - var(--max-width)) / 2);
 		width: 50rem;
 		height: 34rem;
-		border-bottom-right-radius: 5rem;
+		border-bottom-right-radius: var(--border-bottom-right-radius-2);
 		background-color: var(--primary-red-color);
 		z-index: 1;
 	}
