@@ -1,5 +1,5 @@
 <section class="wrapper">
-	<div class="overlay" />
+	<div class="top-to-bottom-overlay" />
 
 	<div class="image-container">
 		<div />
@@ -70,7 +70,7 @@
 	}
 
 	.info-container > div:first-child > :first-child {
-		font-size: 1.8rem;
+		font-size: 2rem;
 		font-weight: bold;
 		text-transform: uppercase;
 	}

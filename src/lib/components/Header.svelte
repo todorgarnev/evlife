@@ -20,7 +20,7 @@
 			{#each navItemsSoon as item}
 				<li>
 					<span>Скоро</span>
-					<span class="soon">{item}</span>
+					<span class="soon text-gray">{item}</span>
 				</li>
 			{/each}
 		</ul>
@@ -36,12 +36,12 @@
 		<div>
 			<div>
 				<span>Новини за EV NEWS</span>
-				<span>Теми, които те вълнуват</span>
+				<span class="text-gray">Теми, които те вълнуват</span>
 			</div>
 
 			<div>
 				<span>Твоята EV Кола</span>
-				<span>Запиши колата си за ревю</span>
+				<span class="text-gray">Запиши колата си за ревю</span>
 			</div>
 		</div>
 	</div>
@@ -90,10 +90,6 @@
 		font-size: 1.8rem;
 	}
 
-	nav ul li span:last-child.soon {
-		color: var(--font-color-gray);
-	}
-
 	nav + span {
 		font-size: 2.5rem;
 		cursor: pointer;
@@ -138,7 +134,6 @@
 	}
 
 	.sidebar > :last-child > div > :last-child {
-		color: var(--font-color-gray);
 		font-size: 1.1rem;
 		font-style: italic;
 	}

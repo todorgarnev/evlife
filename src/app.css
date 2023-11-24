@@ -156,7 +156,12 @@ table {
 			#262628 0.4rem,
 			#252527 0.5rem,
 			#252527 1rem);
-	--top-to-bottom-overlay: linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 50%);
+	--stripes-bg: repeating-linear-gradient(-45deg,
+			#000,
+			#000 0.2rem,
+			#1a1a1a 0.5rem,
+			#1a1a1a 0.8rem);
+	--top-to-bottom-overlay: linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 70%);
 	--bottom-to-top-overlay: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 70%);
 	--primary-red-color: #fe3652;
 	--secondary-red-color: #7f1b29;
@@ -192,8 +197,12 @@ table {
 	transform-origin: top left;
 }
 
-.overlay {
+.top-to-bottom-overlay {
 	position: absolute;
 	inset: 0;
 	background: var(--top-to-bottom-overlay);
+}
+
+.text-gray {
+	color: var(--font-color-gray);
 }
