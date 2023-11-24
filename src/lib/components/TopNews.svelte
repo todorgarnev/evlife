@@ -20,7 +20,7 @@
 	section {
 		position: relative;
 		padding-block: 3rem 7rem;
-		background: var(--primary-bg-stripes);
+		background: var(--stripes-bg-1);
 		color: var(--font-color-white);
 	}
 

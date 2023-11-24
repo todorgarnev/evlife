@@ -1,5 +1,5 @@
 <script lang="ts">
-	const reviews = [
+	const masters = [
 		{
 			date: "04.09.2023",
 			description: "VW ID4 GTX - Изненадващо добър и много стилен"
@@ -15,35 +15,19 @@
 		{
 			date: "04.09.2023",
 			description: "Citroen AMI - Движи се, но електромобил ли е?"
-		},
-		{
-			title: "ev masters",
-			description: "Виктор Стоянов - Как реших да карам електромобил?"
-		},
-		{
-			date: "04.09.2023",
-			description: "BMW iX M60 - Кралят на SUV-овете (EV)"
-		},
-		{
-			date: "04.09.2023",
-			description: "Cybertruck, Porsche Macan EV, MG не може да бъде спрян"
-		},
-		{
-			date: "04.09.2023",
-			description: "Tesla M3 Highland, Cybertruck, CATL"
 		}
 	];
 </script>
 
 <section class="wrapper">
 	<header class="header">
-		<div class="bordered-title">ev ревюта</div>
+		<div class="bordered-title">ev masters</div>
 
 		<button class="button"> виж всички</button>
 	</header>
 
 	<div class="items">
-		{#each reviews as item}
+		{#each masters as item}
 			<div class="news-card small-news-card">
 				<div class="card-image">
 					<div class="overlay" />
@@ -60,7 +44,7 @@
 <style>
 	section {
 		padding-block: 4rem;
-		background: var(--secondary-bg-color);
+		background: var(--stripes-bg-4);
 	}
 
 	.items {

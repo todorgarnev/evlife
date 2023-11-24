@@ -44,13 +44,12 @@
 		{#each primaryNews as item}
 			<div class="news-card big-news-card">
 				<div class="card-image">
-					<div />
+					<div class="overlay" />
+
+					<div class="title">{item.date}</div>
 				</div>
 
-				<div class="content">
-					<div class="title">{item.date}</div>
-					<div class="description">{item.description}</div>
-				</div>
+				<div class="description">{item.description}</div>
 			</div>
 		{/each}
 	</div>
@@ -59,13 +58,12 @@
 		{#each secondaryNews as item}
 			<div class="news-card small-news-card">
 				<div class="card-image">
-					<div />
+					<div class="overlay" />
+
+					<div class="title">{item.date}</div>
 				</div>
 
-				<div class="content">
-					<div class="title">{item.date}</div>
-					<div class="description">{item.description}</div>
-				</div>
+				<div class="description">{item.description}</div>
 			</div>
 		{/each}
 	</div>
@@ -74,7 +72,7 @@
 <style>
 	section {
 		padding-block: 4rem;
-		background: var(--secondary-bg-stripes);
+		background: var(--stripes-bg-2);
 	}
 
 	.primary-items {

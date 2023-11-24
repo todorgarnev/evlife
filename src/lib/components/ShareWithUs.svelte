@@ -52,7 +52,7 @@
 	.stripes {
 		margin-block: 5rem;
 		grid-column: 3/4;
-		background: var(--stripes-bg);
+		background: var(--stripes-bg-3);
 	}
 
 	section > :nth-child(3) {
