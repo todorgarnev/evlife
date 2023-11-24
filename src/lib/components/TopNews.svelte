@@ -6,13 +6,13 @@
 	</div>
 
 	<div class="info-container">
-		<div>
+		<div class="title">
 			<span>EV ревюта</span>
 			&#x2022;
 			<span>04.10.2023</span>
 		</div>
 
-		<div>VW ID. BUZZ <br /> Няма как да не го харесате, страхотен е!</div>
+		<div class="description">VW ID. BUZZ <br /> Няма как да не го харесате, страхотен е!</div>
 	</div>
 </section>
 
@@ -64,22 +64,22 @@
 		z-index: 1;
 	}
 
-	.info-container > div:first-child {
+	.title {
 		margin-bottom: 3rem;
 		color: var(--font-color-black);
 	}
 
-	.info-container > div:first-child > :first-child {
+	.title > :first-child {
 		font-size: 2rem;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
 
-	.info-container > div:first-child > :last-child {
+	.title > :last-child {
 		font-size: 1.6rem;
 	}
 
-	.info-container > div:last-child {
+	.description {
 		font-size: 4rem;
 	}
 </style>

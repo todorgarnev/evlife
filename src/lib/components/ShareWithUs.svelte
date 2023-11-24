@@ -1,13 +1,13 @@
 <section class="wrapper">
-	<div>
-		<div>сподели с нас</div>
+	<div class="share-with-us">
+		<div class="title">сподели с нас</div>
 
-		<div class="text-gray">
+		<div class="description text-gray">
 			Lorem ipsum е елементарен примерен текст, използван в печатарската и типографската индустрия.
 		</div>
 	</div>
 
-	<div />
+	<div class="stripes" />
 
 	<div class="card">
 		<div class="card-overlay" />
@@ -36,12 +36,12 @@
 		color: var(--font-color-white);
 	}
 
-	section > :first-child {
+	.share-with-us {
 		padding-top: 5rem;
 		grid-column: 1/2;
 	}
 
-	section > :first-child > :first-child {
+	.share-with-us .title {
 		margin-bottom: 4.5rem;
 		padding-block: 1.5rem;
 		padding-left: 2rem;
@@ -50,12 +50,12 @@
 		text-transform: uppercase;
 	}
 
-	section > :first-child > :last-child {
+	.share-with-us .description {
 		font-size: 1.3rem;
 		line-height: 1.5;
 	}
 
-	section > :nth-child(2) {
+	.stripes {
 		margin-block: 5rem;
 		grid-column: 3/4;
 		background: var(--stripes-bg);

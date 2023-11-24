@@ -4,7 +4,7 @@
 </script>
 
 <section class="wrapper">
-	<span>популярни теми</span>
+	<span class="text-uppercase">популярни теми</span>
 
 	<span class="diagonal-line" />
 
@@ -35,10 +35,6 @@
 		background-color: var(--primary-bg-color);
 		color: var(--font-color-white);
 		font-size: 1.3rem;
-	}
-
-	span {
-		text-transform: uppercase;
 	}
 
 	span.diagonal-line {

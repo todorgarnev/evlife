@@ -206,3 +206,7 @@ table {
 .text-gray {
 	color: var(--font-color-gray);
 }
+
+.text-uppercase {
+	text-transform: uppercase;
+}

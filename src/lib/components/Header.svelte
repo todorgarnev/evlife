@@ -6,42 +6,42 @@
 </script>
 
 <header class="wrapper">
-	<img src={Logo} alt="Carlife by Dani Logo" />
+	<img class="logo" src={Logo} alt="Carlife by Dani Logo" />
 
 	<nav>
 		<ul>
 			{#each navItems as item, i}
 				<li>
-					<span>{String(i + 1).padStart(2, "0")}</span>
-					<span>{item}</span>
+					<span class="sub-title">{String(i + 1).padStart(2, "0")}</span>
+					<span class="title">{item}</span>
 				</li>
 			{/each}
 
 			{#each navItemsSoon as item}
 				<li>
-					<span>Скоро</span>
-					<span class="soon text-gray">{item}</span>
+					<span class="sub-title">Скоро</span>
+					<span class="title soon text-gray">{item}</span>
 				</li>
 			{/each}
 		</ul>
 	</nav>
 
-	<span>🔍</span>
+	<span class="magnifier">🔍</span>
 
 	<span class="diagonal-line" />
 
 	<div class="sidebar">
-		<span>сподели с нас...</span>
+		<span class="sidebar-title">сподели с нас...</span>
 
-		<div>
-			<div>
-				<span>Новини за EV NEWS</span>
-				<span class="text-gray">Теми, които те вълнуват</span>
+		<div class="sidebar-items">
+			<div class="sidebar-item">
+				<span class="item-title">Новини за EV NEWS</span>
+				<span class="item-sub-title text-gray">Теми, които те вълнуват</span>
 			</div>
 
-			<div>
-				<span>Твоята EV Кола</span>
-				<span class="text-gray">Запиши колата си за ревю</span>
+			<div class="sidebar-item">
+				<span class="item-title">Твоята EV Кола</span>
+				<span class="item-sub-title text-gray">Запиши колата си за ревю</span>
 			</div>
 		</div>
 	</div>
@@ -57,7 +57,7 @@
 		border-top: 0.1rem solid var(--secondary-red-color);
 	}
 
-	img {
+	.logo {
 		margin-right: 4rem;
 		width: 100%;
 		max-width: 20rem;
@@ -81,21 +81,21 @@
 		cursor: pointer;
 	}
 
-	nav ul li span:first-child {
+	.sub-title {
 		color: var(--primary-red-color);
 		font-size: 1.3rem;
 	}
 
-	nav ul li span:last-child {
+	.title {
 		font-size: 1.8rem;
 	}
 
-	nav + span {
+	.magnifier {
 		font-size: 2.5rem;
 		cursor: pointer;
 	}
 
-	span.diagonal-line {
+	.diagonal-line {
 		margin-inline: 0.5rem;
 		position: relative;
 		top: 2rem;
@@ -111,29 +111,29 @@
 		gap: 1rem;
 	}
 
-	.sidebar > :first-child {
+	.sidebar-title {
 		color: var(--primary-red-color);
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 		text-transform: uppercase;
 	}
 
-	.sidebar > :last-child {
+	.sidebar-items {
 		display: flex;
 		gap: 3rem;
 	}
 
-	.sidebar > :last-child > div {
+	.sidebar-item {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
 		cursor: pointer;
 	}
 
-	.sidebar > :last-child > div > :first-child {
+	.item-title {
 		font-size: 1.6rem;
 	}
 
-	.sidebar > :last-child > div > :last-child {
+	.item-sub-title {
 		font-size: 1.1rem;
 		font-style: italic;
 	}
