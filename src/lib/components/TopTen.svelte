@@ -70,7 +70,7 @@
 		grid-template-rows: repeat(6, 1fr);
 		grid-auto-flow: column;
 		gap: 1rem;
-		background-color: var(--tertiary-bg-color);
+		background-color: var(--secondary-bg-color);
 	}
 
 	.header-title {
@@ -94,7 +94,7 @@
 	}
 
 	.card .number {
-		color: var(--tertiary-bg-color);
+		color: var(--secondary-bg-color);
 		font-size: 9rem;
 	}
 

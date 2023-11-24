@@ -24,7 +24,7 @@
 		</ul>
 	</nav>
 
-	<button class="button">💖 подкрепи ни</button>
+	<button>💖 подкрепи ни</button>
 </section>
 
 <style>
@@ -61,5 +61,13 @@
 
 	button {
 		margin-left: 2rem;
+		padding: 1rem 1.5rem;
+		width: max-content;
+		background-color: var(--button-bg);
+		color: var(--font-color-white);
+		font-size: 1.4rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		cursor: pointer;
 	}
 </style>

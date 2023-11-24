@@ -151,12 +151,17 @@ table {
 
 :root {
 	--primary-bg-color: #000;
-	--secondary-bg-color: repeating-linear-gradient(-45deg,
+	--secondary-bg-color: #262626;
+	--primary-bg-stripes: repeating-linear-gradient(-45deg,
 			#262628,
 			#262628 0.4rem,
 			#252527 0.5rem,
 			#252527 1rem);
-	--tertiary-bg-color: #262626;
+	--secondary-bg-stripes: repeating-linear-gradient(-45deg,
+			#202020,
+			#202020 0.4rem,
+			#262626 0.5rem,
+			#262626 0.9rem);
 	--stripes-bg: repeating-linear-gradient(-45deg,
 			#000,
 			#000 0.2rem,
@@ -181,8 +186,9 @@ table {
 }
 
 .button {
-	padding: 1rem 1.5rem;
+	padding: 1rem 3.5rem;
 	width: max-content;
+	height: max-content;
 	background-color: var(--button-bg);
 	color: var(--font-color-white);
 	font-size: 1.4rem;
@@ -219,4 +225,66 @@ table {
 	border-left: 1rem solid var(--primary-red-color);
 	font-size: 3.5rem;
 	text-transform: uppercase;
+}
+
+.big-news-card {
+	display: grid;
+	grid-template-rows: 50% 50%;
+	height: 40rem;
+	background-color: var(--primary-bg-color);
+	color: var(--font-color-white);
+	border-bottom-right-radius: 5rem;
+}
+
+.big-news-card .content {
+	padding: 0 3.5rem 3.5rem;
+}
+
+.big-news-card .description {
+	font-size: 2.7rem;
+	line-height: 1.3;
+}
+
+.small-news-card {
+	display: grid;
+	grid-template-rows: 50% 50%;
+	height: 32rem;
+	background-color: var(--primary-bg-color);
+	color: var(--font-color-white);
+	border-bottom-right-radius: 5rem;
+}
+
+.small-news-card .content {
+	padding: 0 2rem 3.5rem;
+}
+
+.small-news-card .description {
+	font-size: 1.8rem;
+	line-height: 1.3;
+}
+
+.big-news-card .title,
+.small-news-card .title {
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+}
+
+.big-news-card .card-image,
+.small-news-card .card-image {
+	position: relative;
+	background-color: dodgerblue;
+}
+
+.big-news-card .card-image > div,
+.small-news-card .card-image > div {
+	position: absolute;
+	inset: 0;
+	background: var(--bottom-to-top-overlay);
+}
+
+.header {
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
