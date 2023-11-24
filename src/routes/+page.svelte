@@ -1,6 +1,7 @@
 <script lang="ts">
 	import EvMasters from "$lib/components/EvMasters.svelte";
 	import EvNews from "$lib/components/EvNews.svelte";
+	import FindUs from "$lib/components/FindUs.svelte";
 	import Header from "$lib/components/Header.svelte";
 	import Reviews from "$lib/components/Reviews.svelte";
 	import ShareWithUs from "$lib/components/ShareWithUs.svelte";
@@ -21,3 +22,4 @@
 <EvNews />
 <Reviews />
 <EvMasters />
+<FindUs />

@@ -37,7 +37,7 @@
 	<header class="header">
 		<div class="bordered-title">ev news</div>
 
-		<button class="button"> виж всички</button>
+		<button class="button">виж всички</button>
 	</header>
 
 	<div class="primary-items">

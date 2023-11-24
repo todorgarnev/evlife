@@ -39,7 +39,7 @@
 	<header class="header">
 		<div class="bordered-title">ev ревюта</div>
 
-		<button class="button"> виж всички</button>
+		<button class="button">виж всички</button>
 	</header>
 
 	<div class="items">
