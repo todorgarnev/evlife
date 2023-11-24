@@ -1,6 +1,6 @@
 <section class="wrapper">
 	<div class="share-with-us">
-		<div class="title">сподели с нас</div>
+		<div class="title bordered-title">сподели с нас</div>
 
 		<div class="description text-gray">
 			Lorem ipsum е елементарен примерен текст, използван в печатарската и типографската индустрия.
@@ -30,10 +30,9 @@
 	section {
 		padding-block: 7.5rem;
 		display: grid;
-		grid-template-columns: 31.5rem 7rem 5.5rem 40rem 3rem 40rem;
+		grid-template-columns: 31.5rem auto 5.5rem 40rem 3rem 40rem;
 		grid-template-rows: 60rem;
 		background-color: var(--primary-bg-color);
-		color: var(--font-color-white);
 	}
 
 	.share-with-us {
@@ -43,11 +42,6 @@
 
 	.share-with-us .title {
 		margin-bottom: 4.5rem;
-		padding-block: 1.5rem;
-		padding-left: 2rem;
-		border-left: 1rem solid var(--primary-red-color);
-		font-size: 3.5rem;
-		text-transform: uppercase;
 	}
 
 	.share-with-us .description {
@@ -86,6 +80,7 @@
 	.card-title {
 		margin-bottom: 2rem;
 		position: inherit;
+		color: var(--font-color-white);
 		font-size: 2.5rem;
 	}
 

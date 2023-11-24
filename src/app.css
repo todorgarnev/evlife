@@ -156,6 +156,7 @@ table {
 			#262628 0.4rem,
 			#252527 0.5rem,
 			#252527 1rem);
+	--tertiary-bg-color: #262626;
 	--stripes-bg: repeating-linear-gradient(-45deg,
 			#000,
 			#000 0.2rem,
@@ -208,5 +209,14 @@ table {
 }
 
 .text-uppercase {
+	text-transform: uppercase;
+}
+
+.bordered-title {
+	padding-block: 1.5rem;
+	padding-left: 2rem;
+	color: var(--font-color-white);
+	border-left: 1rem solid var(--primary-red-color);
+	font-size: 3.5rem;
 	text-transform: uppercase;
 }

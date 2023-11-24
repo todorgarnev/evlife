@@ -3,6 +3,7 @@
 	import ShareWithUs from "$lib/components/ShareWithUs.svelte";
 	import TopBar from "$lib/components/TopBar.svelte";
 	import TopNews from "$lib/components/TopNews.svelte";
+	import TopTen from "$lib/components/TopTen.svelte";
 </script>
 
 <svelte:head>
@@ -13,3 +14,4 @@
 <Header />
 <TopNews />
 <ShareWithUs />
+<TopTen />
