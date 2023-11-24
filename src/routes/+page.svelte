@@ -1,6 +1,7 @@
 <script lang="ts">
 	import EvNews from "$lib/components/EvNews.svelte";
 	import Header from "$lib/components/Header.svelte";
+	import Reviews from "$lib/components/Reviews.svelte";
 	import ShareWithUs from "$lib/components/ShareWithUs.svelte";
 	import TopBar from "$lib/components/TopBar.svelte";
 	import TopNews from "$lib/components/TopNews.svelte";
@@ -17,3 +18,4 @@
 <ShareWithUs />
 <TopTen />
 <EvNews />
+<Reviews />

@@ -42,7 +42,7 @@
 
 	<div class="primary-items">
 		{#each primaryNews as item}
-			<div class="big-news-card">
+			<div class="news-card big-news-card">
 				<div class="card-image">
 					<div />
 				</div>
@@ -57,7 +57,7 @@
 
 	<div class="secondary-items">
 		{#each secondaryNews as item}
-			<div class="small-news-card">
+			<div class="news-card small-news-card">
 				<div class="card-image">
 					<div />
 				</div>

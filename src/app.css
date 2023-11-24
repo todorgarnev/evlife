@@ -227,13 +227,16 @@ table {
 	text-transform: uppercase;
 }
 
-.big-news-card {
+.news-card {
 	display: grid;
 	grid-template-rows: 50% 50%;
-	height: 40rem;
 	background-color: var(--primary-bg-color);
 	color: var(--font-color-white);
 	border-bottom-right-radius: 5rem;
+}
+
+.big-news-card {
+	height: 40rem;
 }
 
 .big-news-card .content {
@@ -246,12 +249,7 @@ table {
 }
 
 .small-news-card {
-	display: grid;
-	grid-template-rows: 50% 50%;
 	height: 32rem;
-	background-color: var(--primary-bg-color);
-	color: var(--font-color-white);
-	border-bottom-right-radius: 5rem;
 }
 
 .small-news-card .content {
