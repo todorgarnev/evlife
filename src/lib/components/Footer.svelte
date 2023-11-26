@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logo from "$lib/assets/logo.png";
+	import Logo from "$lib/assets/images/logo.png";
 
 	const navItems = ["EV news", "EV ревюта", "EV masters", "календар", "публикации"];
 	const menu = ["За нас", "Партньори", "Контакти", "Общи условия", "Новини за EV News", "Tвоята EV Kола"];

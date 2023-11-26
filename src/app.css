@@ -96,6 +96,7 @@ button {
 
 body {
 	min-height: 100vh;
+	font-family: "Sofia Sans", sans-serif;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
