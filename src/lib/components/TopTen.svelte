@@ -1,4 +1,6 @@
 <script lang="ts">
+	import CarLife from "$lib/components/Icons/CarLife.svelte";
+
 	const topTen = [
 		{
 			title: "ev ревюта",
@@ -44,70 +46,94 @@
 </script>
 
 <section class="wrapper">
-	<div class="header-title bordered-title">car life top 10</div>
-
-	<div class="header-description text-gray">
-		Car Life top 10 е седмична класация. <br /> Период на класацията 16.11 - 22.11.2023
-	</div>
-
-	{#each topTen as item, i}
-		<div class="card">
-			<div class="number">{String(i + 1).padStart(2, "0")}</div>
-
-			<div class="text">
-				<div class="title">{item.title}</div>
-				<div class="description">{item.description}</div>
-			</div>
+	<header>
+		<div class="header-title bordered-title">
+			<CarLife />
+			top 10
 		</div>
-	{/each}
+
+		<div class="header-description text-gray">
+			Car Life top 10 е седмична класация. <br /> Период на класацията 16.11 - 22.11.2023
+		</div>
+	</header>
+
+	<div class="cards">
+		{#each topTen as item, i}
+			<div class="card">
+				<div class="number">{String(i + 1).padStart(2, "0")}</div>
+
+				<div class="text">
+					<div class="title">{item.title}</div>
+					<div class="description">{item.description}</div>
+				</div>
+			</div>
+		{/each}
+	</div>
 </section>
 
 <style>
 	section {
-		padding-block: 2rem 5rem;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(6, 1fr);
-		grid-auto-flow: column;
-		gap: 1rem;
+		padding-block: 5rem;
 		background-color: var(--secondary-bg-color);
 	}
 
+	header {
+		margin-bottom: 4rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.header-title {
-		margin-block: 3rem;
+		display: flex;
+		align-items: center;
+		gap: 1.7rem;
 	}
 
 	.header-description {
-		padding-block: 4.5rem;
-		grid-column: 2/3;
-		text-align: right;
+		/* text-align: right; */
 		font-size: 1.2rem;
-		line-height: 1.5;
+		line-height: 1.6rem;
+	}
+
+	.cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, 1fr);
+		grid-auto-flow: column;
+		gap: 1rem;
 	}
 
 	.card {
-		padding: 2rem;
+		padding: 1.3rem 3.8rem 0.7rem 2.2rem;
 		display: flex;
 		gap: 3.5rem;
 		background-color: var(--primary-bg-color);
 		border-bottom-right-radius: var(--border-bottom-right-radius-1);
 	}
 
+	.card .text {
+		padding-top: 1rem;
+	}
+
 	.card .number {
 		color: var(--secondary-bg-color);
-		font-size: 9rem;
+		font-size: 10rem;
+		font-weight: 700;
+		line-height: 10rem;
 	}
 
 	.text .title {
-		margin-bottom: 1.5rem;
+		margin-bottom: 0.75rem;
 		color: var(--primary-red-color);
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 		text-transform: uppercase;
 	}
 
 	.text .description {
 		color: var(--font-color-white);
 		font-size: 2rem;
-		line-height: 1.3;
+		font-weight: 700;
+		line-height: 2.6rem;
 	}
 </style>
