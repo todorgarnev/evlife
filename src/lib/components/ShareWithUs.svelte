@@ -28,9 +28,9 @@
 
 <style>
 	section {
-		padding-block: 7.5rem;
+		padding-block: 8.5rem 7.5rem;
 		display: grid;
-		grid-template-columns: 31.5rem auto 5.5rem 40rem 3rem 40rem;
+		grid-template-columns: 32rem auto 5.5rem 41.2rem 3.2rem 41.2rem;
 		grid-template-rows: 60rem;
 		background-color: var(--primary-bg-color);
 	}
@@ -41,52 +41,62 @@
 	}
 
 	.share-with-us .title {
-		margin-bottom: 4.5rem;
+		margin-bottom: 4rem;
 	}
 
 	.share-with-us .description {
-		font-size: 1.3rem;
-		line-height: 1.5;
+		font-size: 1.5rem;
+		line-height: 2.2rem;
 	}
 
 	.stripes {
 		margin-block: 5rem;
 		grid-column: 3/4;
-		background: var(--stripes-bg-3);
+		background:
+			url(../assets/stripes-bg-3.png),
+			lightgray 0% 0% / 5rem 5rem repeat;
+		background-color: var(--primary-bg-color);
 	}
 
 	section > :nth-child(3) {
 		grid-column: 4/5;
+		background:
+			url("../assets/share-with-us-1.png"),
+			lightgray 50% / cover no-repeat;
 	}
 
 	section > :last-child {
 		grid-column: 6/7;
+
+		background:
+			url("../assets/share-with-us-2.png"),
+			lightgray 50% / cover no-repeat;
 	}
 
 	.card {
-		padding: 6rem;
+		padding: 5.5rem 8.5rem;
 		position: relative;
 		text-align: center;
-		background-color: yellowgreen;
 		border-bottom-right-radius: var(--border-bottom-right-radius-2);
 	}
 
 	.card-overlay {
 		position: absolute;
 		inset: 0;
-		background: var(--top-to-bottom-overlay);
+		background: linear-gradient(180deg, rgba(27, 27, 27, 0.9) 0%, rgba(27, 27, 27, 0) 100%);
 	}
 
 	.card-title {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 		position: inherit;
 		color: var(--font-color-white);
-		font-size: 2.5rem;
+		font-size: 2.8rem;
+		font-weight: 700;
 	}
 
 	.card-description {
 		position: inherit;
-		font-size: 1.6rem;
+		font-size: 1.7rem;
 		font-style: italic;
 	}
 </style>
