@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logo from "$lib/assets/images/logo.png";
+	import Logo from "$lib/components/Icons/Logo.svelte"
 
 	const navItems = ["EV news", "EV ревюта", "EV masters", "календар", "публикации"];
 	const menu = ["За нас", "Партньори", "Контакти", "Общи условия", "Новини за EV News", "Tвоята EV Kола"];
@@ -7,7 +7,7 @@
 
 <footer class="wrapper">
 	<div class="logo-container">
-		<img class="logo" src={Logo} alt="Carlife by Dani Logo" />
+		<Logo />
 
 		<div class="stripes" />
 	</div>

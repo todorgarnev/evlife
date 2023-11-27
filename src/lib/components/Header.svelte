@@ -1,12 +1,15 @@
 <script lang="ts">
-	import Logo from "$lib/assets/images/logo.png";
+	import Logo from "$lib/components/Icons/Logo.svelte";
+	import Search from "$lib/components/Icons/Search.svelte";
+	import DiagonalLine from "./Icons/DiagonalLine.svelte";
 
-	const navItems = ["EV news", "EV ревюта", "EV masters"];
-	const navItemsSoon = ["календар", "публикации"];
+	const navItems = ["EV News", "EV Ревюта", "EV Masters", "Новини", "Галерия"];
 </script>
 
 <header class="wrapper">
-	<img class="logo" src={Logo} alt="Carlife by Dani Logo" />
+	<div class="logo">
+		<Logo />
+	</div>
 
 	<nav>
 		<ul>
@@ -16,19 +19,14 @@
 					<span class="title">{item}</span>
 				</li>
 			{/each}
-
-			{#each navItemsSoon as item}
-				<li>
-					<span class="sub-title">Скоро</span>
-					<span class="title soon text-gray">{item}</span>
-				</li>
-			{/each}
 		</ul>
 	</nav>
 
-	<span class="magnifier">🔍</span>
+	<span class="pointer">
+		<Search />
+	</span>
 
-	<span class="diagonal-line" />
+	<DiagonalLine width={18} height={36} />
 
 	<div class="sidebar">
 		<span class="sidebar-title">сподели с нас...</span>
@@ -49,18 +47,18 @@
 
 <style>
 	header {
-		padding-block: 2rem;
+		padding-block: 1.5rem;
 		display: flex;
 		align-items: center;
 		background-color: var(--primary-bg-color);
 		color: var(--font-color-white);
-		border-top: 0.1rem solid var(--secondary-red-color);
+		border-top: 0.1rem solid rgba(var(--primary-red-color-rgb), 0.5);
 	}
 
 	.logo {
-		margin-right: 4rem;
+		margin-right: 2.6rem;
 		width: 100%;
-		max-width: 20rem;
+		max-width: 22.4rem;
 		height: 100%;
 	}
 
@@ -70,14 +68,12 @@
 
 	nav ul {
 		display: flex;
-		gap: 2rem;
-		text-transform: capitalize;
+		gap: 3rem;
 	}
 
 	nav ul li {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
 		cursor: pointer;
 	}
 
@@ -87,33 +83,26 @@
 	}
 
 	.title {
-		font-size: 1.8rem;
+		font-size: 2rem;
+		font-weight: 700;
 	}
 
-	.magnifier {
-		font-size: 2.5rem;
-		cursor: pointer;
-	}
-
-	.diagonal-line {
-		margin-inline: 0.5rem;
-		position: relative;
-		top: 2rem;
-		left: 0.8rem;
-		width: 3.5rem;
-		border-bottom-width: 0.3rem;
+	.pointer {
+		margin-right: 1.6rem;
 	}
 
 	.sidebar {
+		margin-left: 1.6rem;
 		display: flex;
 		flex-direction: column;
 		align-self: flex-start;
-		gap: 1rem;
+		gap: 0.6rem;
 	}
 
 	.sidebar-title {
 		color: var(--primary-red-color);
 		font-size: 1.3rem;
+		font-weight: 700;
 		text-transform: uppercase;
 	}
 
@@ -125,16 +114,17 @@
 	.sidebar-item {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
+		gap: 0.4rem;
 		cursor: pointer;
 	}
 
 	.item-title {
-		font-size: 1.6rem;
+		font-size: 1.7rem;
+		font-weight: 700;
 	}
 
 	.item-sub-title {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 		font-style: italic;
 	}
 </style>

@@ -174,8 +174,8 @@ table {
 			#262626 0.9rem);
 	--top-to-bottom-overlay: linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 70%);
 	--bottom-to-top-overlay: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 70%);
-	--primary-red-color: #fe3652;
-	--secondary-red-color: #7f1b29;
+	--primary-red-color: #FE3652;
+	--primary-red-color-rgb: 254, 54, 82;
 	--primary-gray-color: #3b3b3c;
 	--font-color-white: #fff;
 	--font-color-black: #000;
@@ -206,13 +206,6 @@ table {
 	cursor: pointer;
 }
 
-.diagonal-line {
-	width: 3rem;
-	border-bottom: 0.2rem solid #505050;
-	transform: rotate(-65deg);
-	transform-origin: top left;
-}
-
 .top-to-bottom-overlay {
 	position: absolute;
 	inset: 0;
@@ -230,6 +223,11 @@ table {
 .text-bold {
 	font-weight: 700;
 }
+
+.pointer {
+	cursor: pointer;
+}
+
 .bordered-title {
 	padding-block: 1.5rem;
 	padding-left: 2rem;
