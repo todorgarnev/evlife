@@ -152,11 +152,6 @@ table {
 :root {
 	--primary-bg-color: #000;
 	--secondary-bg-color: #262626;
-	--stripes-bg-1: repeating-linear-gradient(-45deg,
-			#262628,
-			#262628 0.4rem,
-			#252527 0.5rem,
-			#252527 1rem);
 	--stripes-bg-2: repeating-linear-gradient(-45deg,
 			#202020,
 			#202020 0.4rem,
@@ -172,8 +167,8 @@ table {
 			#2a2a2a 0.4rem,
 			#262626 0.5rem,
 			#262626 0.9rem);
-	--top-to-bottom-overlay: linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 70%);
-	--bottom-to-top-overlay: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 70%);
+	--top-to-bottom-overlay: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+	--bottom-to-top-overlay: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 40.74%);
 	--primary-red-color: #FE3652;
 	--primary-red-color-rgb: 254, 54, 82;
 	--primary-gray-color: #3b3b3c;
@@ -185,7 +180,6 @@ table {
 	--border-bottom-right-radius-1: 3rem;
 	--border-bottom-right-radius-2: 5rem;
 	--border-bottom-right-radius-3: 10rem;
-	--border-bottom-right-radius-4: 13rem;
 
 	font-size: 10px;
 }
@@ -210,6 +204,7 @@ table {
 	position: absolute;
 	inset: 0;
 	background: var(--top-to-bottom-overlay);
+	opacity: 0.6;
 }
 
 .text-gray {

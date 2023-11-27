@@ -1,14 +1,26 @@
+<script lang="ts">
+	import imageSrc from "$lib/assets/VW_ID_Buzz.png";
+	import CurvedLine from "./Icons/CurvedLine.svelte";
+	import Dot from "./Icons/Dot.svelte";
+</script>
+
 <section class="wrapper">
 	<div class="top-to-bottom-overlay" />
 
 	<div class="image-container">
+		<img src={imageSrc} alt="Top news" />
+
+		<span class="curved-line">
+			<CurvedLine />
+		</span>
+
 		<div />
 	</div>
 
 	<div class="info-container">
 		<div class="title">
 			<span>EV ревюта</span>
-			&#x2022;
+			<Dot />
 			<span>04.10.2023</span>
 		</div>
 
@@ -20,35 +32,37 @@
 	section {
 		position: relative;
 		padding-block: 3rem 7rem;
-		background: var(--stripes-bg-1);
-		color: var(--font-color-white);
+		background:
+			url("../assets/stripes-bg.png"),
+			lightgray 0% 0% / 5rem 5rem repeat;
+		background-color: var(--secondary-bg-color);
 	}
 
 	.image-container {
 		position: inherit;
-		width: 96rem;
-		height: 54rem;
+		width: 100%;
+		max-width: 96rem;
+		height: 100%;
+		max-height: 54rem;
 		border-bottom-right-radius: var(--border-bottom-right-radius-3);
-		background-color: dodgerblue;
 		z-index: 1;
 	}
 
-	.image-container::after {
-		content: "";
+	.curved-line {
 		position: absolute;
 		top: 0;
-		bottom: -4rem;
-		left: 0;
 		right: -4rem;
-		border-bottom: 2rem solid var(--primary-gray-color);
-		border-right: 2rem solid var(--primary-gray-color);
-		border-bottom-right-radius: var(--border-bottom-right-radius-4);
 	}
 
 	.image-container > div {
-		width: 100%;
-		height: 100%;
+		position: absolute;
+		inset: 0;
 		background: var(--bottom-to-top-overlay);
+		border-bottom-right-radius: var(--border-bottom-right-radius-3);
+		opacity: 0.6;
+	}
+
+	.image-container > img {
 		border-bottom-right-radius: var(--border-bottom-right-radius-3);
 	}
 
@@ -65,21 +79,28 @@
 	}
 
 	.title {
-		margin-bottom: 3rem;
+		margin-bottom: 2rem;
+		display: flex;
+		align-items: center;
 		color: var(--font-color-black);
 	}
 
 	.title > :first-child {
+		margin-right: 1rem;
 		font-size: 2rem;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
 
 	.title > :last-child {
-		font-size: 1.6rem;
+		margin-left: 1rem;
+		font-size: 1.7rem;
 	}
 
 	.description {
-		font-size: 4rem;
+		color: var(--font-color-white);
+		font-size: 4.6rem;
+		font-weight: 700;
+		line-height: 4.4rem;
 	}
 </style>
