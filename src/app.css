@@ -97,7 +97,6 @@ button {
 body {
 	min-height: 100vh;
 	font-family: "Sofia Sans", sans-serif;
-	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -182,7 +181,6 @@ table {
 	--font-color-black: #000;
 	--font-color-gray: #828586;
 	--delimiter: #1b1b1b;
-	--button-bg: #505050;
 	--max-width: 130rem;
 	--border-bottom-right-radius-1: 3rem;
 	--border-bottom-right-radius-2: 5rem;
@@ -197,13 +195,13 @@ table {
 }
 
 .button {
-	padding: 1rem 3.5rem;
+	padding: 0.8rem 3.2rem;
 	width: max-content;
 	height: max-content;
-	background-color: var(--button-bg);
+	background-color: #505050;
 	color: var(--font-color-white);
 	font-size: 1.4rem;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -229,6 +227,9 @@ table {
 	text-transform: uppercase;
 }
 
+.text-bold {
+	font-weight: 700;
+}
 .bordered-title {
 	padding-block: 1.5rem;
 	padding-left: 2rem;

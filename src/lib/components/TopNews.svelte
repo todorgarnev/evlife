@@ -71,7 +71,7 @@
 
 	.title > :first-child {
 		font-size: 2rem;
-		font-weight: bold;
+		font-weight: 700;
 		text-transform: uppercase;
 	}
 

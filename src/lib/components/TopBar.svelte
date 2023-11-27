@@ -1,14 +1,17 @@
 <script lang="ts">
-	const topics = ["tesla", "EVРевюта", "EVMasters", "батерии", "зареждане", "cyberTruck"];
-	const menu = ["за нас", "партньори", "контакти", "общи условия"];
+	import DiagonalLine from "./Icons/DiagonalLine.svelte";
+	import Heart from "./Icons/Heart.svelte";
+
+	const topics = ["Tesla", "EVРевюта", "EVMasters", "Батерии", "Зареждане", "CyberTruck"];
+	const menu = ["За нас", "Партньори", "Контакти", "Общи условия"];
 </script>
 
 <section class="wrapper">
-	<span class="text-uppercase">популярни теми</span>
+	<span class="text-uppercase text-bold">популярни теми</span>
 
-	<span class="diagonal-line" />
+	<DiagonalLine />
 
-	<nav>
+	<nav class="popular-topics">
 		<ul>
 			{#each topics as topic}
 				<li>#{topic}</li>
@@ -16,7 +19,7 @@
 		</ul>
 	</nav>
 
-	<nav>
+	<nav class="menu">
 		<ul>
 			{#each menu as item}
 				<li>{item}</li>
@@ -24,7 +27,10 @@
 		</ul>
 	</nav>
 
-	<button>💖 подкрепи ни</button>
+	<button class="button">
+		<Heart />
+		подкрепи ни
+	</button>
 </section>
 
 <style>
@@ -37,37 +43,33 @@
 		font-size: 1.3rem;
 	}
 
-	span.diagonal-line {
-		margin-inline: 0.5rem;
-		position: relative;
-		top: 1.5rem;
-		left: 1rem;
+	span {
+		margin-right: 1rem;
 	}
 
 	nav ul {
 		display: flex;
-		gap: 1.5rem;
-		text-transform: capitalize;
+		gap: 1.6rem;
 	}
 
 	nav ul li {
 		cursor: pointer;
 	}
 
-	nav:first-of-type {
+	.popular-topics {
+		margin-left: 1rem;
 		margin-right: auto;
-		font-size: 1.2rem;
+	}
+
+	.menu {
+		font-size: 1.4rem;
 	}
 
 	button {
 		margin-left: 2rem;
-		padding: 1rem 1.5rem;
-		width: max-content;
-		background-color: var(--button-bg);
-		color: var(--font-color-white);
-		font-size: 1.4rem;
-		font-weight: bold;
-		text-transform: uppercase;
-		cursor: pointer;
+		padding-inline: 1.2rem 1.8rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
 	}
 </style>
