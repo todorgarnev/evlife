@@ -112,7 +112,10 @@
 <style>
 	section {
 		padding-block: 4rem 4.4rem;
-		background: var(--stripes-bg-2);
+		background:
+			url("../assets/stripes-bg-4.png"),
+			lightgray 0% 0% / 5rem 5rem repeat;
+		background-color: #202020;
 	}
 
 	.primary-items {
