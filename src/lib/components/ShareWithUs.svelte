@@ -3,7 +3,7 @@
 		<div class="title bordered-title">сподели с нас</div>
 
 		<div class="description text-gray">
-			Lorem ipsum е елементарен примерен текст, използван в печатарската и типографската индустрия.
+			Lorem Ipsum е елементарен примерен текст, използван в печатарската и типографската индустрия.
 		</div>
 	</div>
 
