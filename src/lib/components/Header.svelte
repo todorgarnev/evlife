@@ -4,6 +4,8 @@
 	import DiagonalLine from "./Icons/DiagonalLine.svelte";
 
 	const navItems = ["EV News", "EV Ревюта", "EV Masters", "Новини", "Галерия"];
+
+	let fill = $state("var(--font-color-white)");
 </script>
 
 <header class="wrapper">
@@ -22,8 +24,12 @@
 		</ul>
 	</nav>
 
-	<span class="pointer">
-		<Search />
+	<span
+		class="search"
+		on:mouseover={() => (fill = "var(--primary-red-color)")}
+		on:mouseleave={() => (fill = "var(--font-color-white)")}
+	>
+		<Search {fill} />
 	</span>
 
 	<DiagonalLine width={18} height={36} />
@@ -74,7 +80,13 @@
 	nav ul li {
 		display: flex;
 		flex-direction: column;
+		cursor: default;
+	}
+
+	nav ul li:hover {
+		color: var(--primary-red-color);
 		cursor: pointer;
+		transition: all 0.3s;
 	}
 
 	.sub-title {
@@ -87,8 +99,9 @@
 		font-weight: 700;
 	}
 
-	.pointer {
+	.search {
 		margin-right: 1.6rem;
+		cursor: pointer;
 	}
 
 	.sidebar {
@@ -121,6 +134,12 @@
 	.item-title {
 		font-size: 1.7rem;
 		font-weight: 700;
+	}
+
+	.item-title:hover {
+		color: var(--primary-red-color);
+		cursor: pointer;
+		transition: all 0.3s;
 	}
 
 	.item-sub-title {

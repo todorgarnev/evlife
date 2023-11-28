@@ -5,6 +5,8 @@
 
 	const navItems = ["EV News", "EV Ревюта", "EV Masters", "Новини", "Галерия"];
 	const menu = ["За нас", "Партньори", "Контакти", "Общи условия", "Реклама", "Новини за EV News", "Твоята EV Кола"];
+
+	let fill = $state("var(--primary-red-color)");
 </script>
 
 <footer class="wrapper">
@@ -50,7 +52,9 @@
 				<div class="description">Имате нужда от повече информация или връзка с нас.</div>
 			</div>
 
-			<Anchor />
+			<div class="pointer" on:mouseover={() => (fill = "#1C1C1C")} on:mouseleave={() => (fill = "#FE3652")}>
+				<Anchor {fill} />
+			</div>
 		</div>
 	</div>
 
@@ -108,9 +112,11 @@
 		font-size: 1.4rem;
 	}
 
-	.primary-nav ul li,
-	.secondary-nav ul li {
+	.primary-nav ul li:hover,
+	.secondary-nav ul li:hover {
+		color: var(--primary-red-color);
 		cursor: pointer;
+		transition: all 0.3s;
 	}
 
 	.contact {

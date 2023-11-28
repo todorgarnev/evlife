@@ -91,7 +91,6 @@
 	}
 
 	.header-description {
-		/* text-align: right; */
 		font-size: 1.2rem;
 		line-height: 1.6rem;
 	}
@@ -135,5 +134,11 @@
 		font-size: 2rem;
 		font-weight: 700;
 		line-height: 2.6rem;
+	}
+
+	.text .description:hover {
+		color: var(--primary-red-color);
+		cursor: pointer;
+		transition: all 0.3s;
 	}
 </style>

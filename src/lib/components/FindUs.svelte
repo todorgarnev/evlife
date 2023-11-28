@@ -78,6 +78,12 @@
 		border-bottom-right-radius: var(--border-bottom-right-radius-1);
 	}
 
+	.card:hover {
+		background-color: #1c1c1c;
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+
 	.card .title {
 		font-size: 1.2rem;
 		font-weight: 700;

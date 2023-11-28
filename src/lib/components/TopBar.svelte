@@ -4,6 +4,8 @@
 
 	const topics = ["Tesla", "EVРевюта", "EVMasters", "Батерии", "Зареждане", "CyberTruck"];
 	const menu = ["За нас", "Партньори", "Контакти", "Общи условия"];
+
+	let fill = $state("#FE3652");
 </script>
 
 <section class="wrapper">
@@ -27,8 +29,12 @@
 		</ul>
 	</nav>
 
-	<button class="button">
-		<Heart />
+	<button
+		class="button"
+		on:mouseover={() => (fill = "var(--font-color-white)")}
+		on:mouseleave={() => (fill = "var(--primary-red-color)")}
+	>
+		<Heart {fill} />
 		подкрепи ни
 	</button>
 </section>
@@ -50,10 +56,13 @@
 	nav ul {
 		display: flex;
 		gap: 1.6rem;
+		cursor: default;
 	}
 
-	nav ul li {
+	nav ul li:hover {
+		color: var(--primary-red-color);
 		cursor: pointer;
+		transition: all 0.3s;
 	}
 
 	.popular-topics {

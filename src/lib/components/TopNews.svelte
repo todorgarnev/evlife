@@ -75,7 +75,13 @@
 		height: 34rem;
 		border-bottom-right-radius: var(--border-bottom-right-radius-2);
 		background-color: var(--primary-red-color);
+		cursor: pointer;
 		z-index: 1;
+	}
+
+	.info-container:hover .description {
+		color: var(--font-color-black);
+		transition: all 0.3s;
 	}
 
 	.title {

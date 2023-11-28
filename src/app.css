@@ -183,6 +183,11 @@ table {
 	font-size: 1.4rem;
 	font-weight: 700;
 	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+.button:hover {
+	background-color: var(--primary-red-color);
 	cursor: pointer;
 }
 
@@ -222,6 +227,7 @@ table {
 	display: grid;
 	background-color: var(--primary-bg-color);
 	color: var(--font-color-white);
+	cursor: pointer;
 }
 
 .news-card .card-image {
@@ -237,6 +243,11 @@ table {
 	position: absolute;
 	inset: 0;
 	background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 49.7%);
+}
+
+.news-card:hover .description {
+	color: var(--primary-red-color);
+	transition: all 0.3s;
 }
 
 .big-news-card .card-image .title {

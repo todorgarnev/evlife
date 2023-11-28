@@ -78,6 +78,15 @@
 		position: relative;
 		text-align: center;
 		border-bottom-right-radius: var(--border-bottom-right-radius-2);
+		cursor: pointer;
+	}
+
+	.card:hover .card-overlay {
+		background: linear-gradient(180deg, var(--primary-red-color) 0%, rgba(254, 54, 82, 0) 100%);
+	}
+
+	.card:hover .card-description {
+		color: var(--font-color-black);
 	}
 
 	.card-overlay {
