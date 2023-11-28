@@ -97,6 +97,10 @@
 		cursor: pointer;
 	}
 
+	.brand svg mask rect {
+		fill: green;
+	}
+
 	.curved-line {
 		position: absolute;
 		top: 0;

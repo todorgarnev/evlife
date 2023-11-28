@@ -24,7 +24,7 @@
 			<span>04.10.2023</span>
 		</div>
 
-		<div class="description">VW ID. BUZZ <br /> Няма как да не го харесате, страхотен е!</div>
+		<div class="description">VW ID. <br /> Buzz Няма как да не го харесате, страхотен е!</div>
 	</div>
 </section>
 
