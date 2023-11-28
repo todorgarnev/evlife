@@ -1,20 +1,40 @@
 <script lang="ts">
+	import Youtube from "$lib/components/Icons/Youtube.svelte";
+	import Patreon from "./Icons/Patreon.svelte";
+	import Facebook from "./Icons/Facebook.svelte";
+	import Instagram from "./Icons/Instagram.svelte";
+	import TikTok from "./Icons/TikTok.svelte";
+	import Spotify from "./Icons/Spotify.svelte";
+	import Podcast from "./Icons/Podcast.svelte";
+
 	const socials = [
 		{
-			icon: "YouTube",
+			icon: Youtube,
 			title: "@CarlifebyDani"
 		},
 		{
-			icon: "PATREON",
-			title: "@carlifebyDani"
+			icon: Patreon,
+			title: "@carlifebydani"
 		},
 		{
-			icon: "FACEBOOK",
-			title: "@carlifebyDani"
+			icon: Facebook,
+			title: "@carlifebydani"
 		},
 		{
-			icon: "INSTAGRAM",
-			title: "@carlifebyDani"
+			icon: Instagram,
+			title: "@carlifebydani"
+		},
+		{
+			icon: TikTok,
+			title: "@carlifebydani"
+		},
+		{
+			icon: Spotify,
+			title: "@CarlifebyDani"
+		},
+		{
+			icon: Podcast,
+			title: "@CarlifebyDani"
 		}
 	];
 </script>
@@ -24,10 +44,11 @@
 		<div class="bordered-title">намерете ни в</div>
 	</header>
 
-	<div class="items">
+	<div class="cards">
 		{#each socials as item}
 			<div class="card">
-				<div class="icon">{item.icon}</div>
+				<svelte:component this={item.icon} />
+
 				<div class="title text-gray">{item.title}</div>
 			</div>
 		{/each}
@@ -40,26 +61,26 @@
 		background: var(--secondary-bg-color);
 	}
 
-	.items {
+	.cards {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(7, 1fr);
 		gap: 3rem;
 	}
 
 	.card {
-		padding: 7rem 4.5rem;
+		padding: 3.5rem 2.5rem 3rem 2.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 1.5rem;
 		background-color: var(--primary-bg-color);
 		border-bottom-right-radius: var(--border-bottom-right-radius-1);
-		text-align: center;
-	}
-
-	.card .icon {
-		margin-bottom: 3rem;
-		color: var(--font-color-white);
-		font-size: 4rem;
 	}
 
 	.card .title {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
+		font-weight: 700;
+		line-height: 3.6rem;
 	}
 </style>
