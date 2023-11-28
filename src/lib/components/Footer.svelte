@@ -1,13 +1,17 @@
 <script lang="ts">
-	import Logo from "$lib/components/Icons/Logo.svelte"
+	import Logo from "$lib/components/Icons/Logo.svelte";
+	import Envelope from "$lib/components/Icons/Envelope.svelte";
+	import Anchor from "$lib/components/Icons/Anchor.svelte";
 
-	const navItems = ["EV news", "EV ревюта", "EV masters", "календар", "публикации"];
-	const menu = ["За нас", "Партньори", "Контакти", "Общи условия", "Новини за EV News", "Tвоята EV Kола"];
+	const navItems = ["EV News", "EV Ревюта", "EV Masters", "Новини", "Галерия"];
+	const menu = ["За нас", "Партньори", "Контакти", "Общи условия", "Реклама", "Новини за EV News", "Твоята EV Кола"];
 </script>
 
 <footer class="wrapper">
 	<div class="logo-container">
-		<Logo />
+		<span class="logo">
+			<Logo />
+		</span>
 
 		<div class="stripes" />
 	</div>
@@ -17,7 +21,7 @@
 			<nav class="primary-nav">
 				<ul>
 					{#each navItems as item, i}
-						<li class:text-gray={i === 3 || i === 4}>
+						<li>
 							{item}
 						</li>
 					{/each}
@@ -36,7 +40,9 @@
 		</div>
 
 		<div class="contact">
-			<div class="icon">✉️</div>
+			<div class="envelope">
+				<Envelope />
+			</div>
 
 			<div class="email-container">
 				<div class="text">Контакти</div>
@@ -44,7 +50,7 @@
 				<div class="description">Имате нужда от повече информация или връзка с нас.</div>
 			</div>
 
-			<div class="anchor" />
+			<Anchor />
 		</div>
 	</div>
 
@@ -53,7 +59,7 @@
 
 <style>
 	footer {
-		padding-block: 5rem;
+		padding-block: 5rem 3rem;
 		background-color: var(--primary-bg-color);
 		color: var(--font-color-white);
 	}
@@ -68,14 +74,17 @@
 
 	.logo-container .logo {
 		width: 100%;
-		max-width: 17rem;
-		height: fit-content;
+		max-width: 18.4rem;
+		height: 100%;
 	}
 
 	.logo-container .stripes {
 		flex: 1;
 		height: 100%;
-		background: var(--stripes-bg-3);
+		background:
+			url("../assets/stripes-bg-4.png"),
+			lightgray 0% 0% / 5rem 5rem repeat;
+		background-color: var(--font-color-black);
 	}
 
 	.content {
@@ -84,19 +93,19 @@
 	}
 
 	.primary-nav ul {
-		margin-bottom: 4rem;
+		margin-bottom: 3.2rem;
 		display: flex;
 		gap: 3rem;
-		text-transform: capitalize;
-		font-size: 1.8rem;
+		font-size: 2rem;
+		font-weight: 700;
 	}
 
 	.secondary-nav ul {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 1.5rem;
-		width: 50%;
-		font-size: 1.2rem;
+		gap: 1.6rem;
+		width: 70%;
+		font-size: 1.4rem;
 	}
 
 	.primary-nav ul li,
@@ -106,57 +115,40 @@
 
 	.contact {
 		display: flex;
-		gap: 1rem;
 	}
 
-	.contact .icon {
+	.contact .envelope {
 		align-self: center;
-		font-size: 7rem;
+	}
+
+	.contact .email-container {
+		margin-inline: 2.8rem 5.8rem;
 	}
 
 	.contact .email-container .text {
-		margin-bottom: 1.5rem;
+		margin-bottom: 1.1rem;
 		color: var(--primary-red-color);
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 
 	.contact .email-container .email {
-		margin-bottom: 1rem;
-		font-size: 2.5rem;
+		margin-bottom: 0.4rem;
+		font-size: 2.8rem;
+		font-weight: 700;
 	}
 
 	.contact .email-container .description {
-		font-size: 1rem;
+		font-size: 1.2rem;
 		color: var(--font-color-gray);
-	}
-
-	.contact .anchor {
-		margin-left: 4rem;
-		position: relative;
-		width: 10rem;
-		height: 10rem;
-		border-radius: 50%;
-		background-color: var(--primary-red-color);
-		cursor: pointer;
-	}
-
-	.contact .anchor::after {
-		content: "";
-		position: absolute;
-		top: 40%;
-		left: 40%;
-		width: 2rem;
-		height: 2rem;
-		border-top: 0.5rem solid var(--font-color-white);
-		border-left: 0.5rem solid var(--font-color-white);
-		rotate: 45deg;
 	}
 
 	.rights {
 		margin-top: 5rem;
-		padding-top: 5rem;
+		padding-top: 3.6rem;
 		border-top: 0.2rem solid var(--delimiter);
 		text-align: center;
-		font-size: 1.3rem;
+		font-size: 1.4rem;
+		font-weight: 700;
+		line-height: 3.6rem;
 	}
 </style>
