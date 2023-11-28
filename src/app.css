@@ -152,21 +152,7 @@ table {
 :root {
 	--primary-bg-color: #000;
 	--secondary-bg-color: #262626;
-	--stripes-bg-2: repeating-linear-gradient(-45deg,
-			#202020,
-			#202020 0.4rem,
-			#262626 0.5rem,
-			#262626 0.9rem);
-	--stripes-bg-3: repeating-linear-gradient(-45deg,
-			#000,
-			#000 0.2rem,
-			#1a1a1a 0.5rem,
-			#1a1a1a 0.8rem);
-	--stripes-bg-4: repeating-linear-gradient(-45deg,
-			#2a2a2a,
-			#2a2a2a 0.4rem,
-			#262626 0.5rem,
-			#262626 0.9rem);
+	--tertiary-bg-color: #202020;
 	--top-to-bottom-overlay: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
 	--bottom-to-top-overlay: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 40.74%);
 	--primary-red-color: #FE3652;

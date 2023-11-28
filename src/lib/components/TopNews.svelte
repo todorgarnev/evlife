@@ -33,7 +33,7 @@
 		position: relative;
 		padding-block: 3rem 7rem;
 		background:
-			url("../assets/stripes-bg.png"),
+			url("../assets/stripes-bg-1.png"),
 			lightgray 0% 0% / 5rem 5rem repeat;
 		background-color: var(--secondary-bg-color);
 	}

@@ -139,11 +139,11 @@
 
 <style>
 	section {
-		padding-block: 4rem 6rem;
+		padding-block: 4rem 5.5rem;
 		background:
 			url("../assets/stripes-bg-2.png"),
 			lightgray 0% 0% / 5rem 5rem repeat;
-		background-color: #202020;
+		background-color: var(--tertiary-bg-color);
 	}
 
 	.primary-items {

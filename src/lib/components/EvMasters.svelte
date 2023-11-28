@@ -67,9 +67,9 @@
 	section {
 		padding-block: 4rem 4.6rem;
 		background:
-			url("../assets/stripes-bg-4.png"),
+			url("../assets/stripes-bg-2.png"),
 			lightgray 0% 0% / 5rem 5rem repeat;
-			background-color: #202020;
+			background-color: var(--secondary-bg-color);
 	}
 
 	.items {
