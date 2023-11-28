@@ -4,6 +4,7 @@
 	import FindUs from "$lib/components/FindUs.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 	import Header from "$lib/components/Header.svelte";
+	import Manufacturer from "$lib/components/Manufacturer.svelte";
 	import News from "$lib/components/News.svelte";
 	import Reviews from "$lib/components/Reviews.svelte";
 	import ShareWithUs from "$lib/components/ShareWithUs.svelte";
@@ -25,5 +26,6 @@
 <EvNews />
 <Reviews />
 <EvMasters />
+<Manufacturer />
 <FindUs />
 <Footer />

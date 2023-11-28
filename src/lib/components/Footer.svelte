@@ -117,27 +117,27 @@
 		display: flex;
 	}
 
-	.contact .envelope {
+	.envelope {
 		align-self: center;
 	}
 
-	.contact .email-container {
+	.email-container {
 		margin-inline: 2.8rem 5.8rem;
 	}
 
-	.contact .email-container .text {
+	.text {
 		margin-bottom: 1.1rem;
 		color: var(--primary-red-color);
 		font-size: 1.3rem;
 	}
 
-	.contact .email-container .email {
+	.email {
 		margin-bottom: 0.4rem;
 		font-size: 2.8rem;
 		font-weight: 700;
 	}
 
-	.contact .email-container .description {
+	.description {
 		font-size: 1.2rem;
 		color: var(--font-color-gray);
 	}
