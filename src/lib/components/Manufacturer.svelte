@@ -84,7 +84,7 @@
 		display: grid;
 		grid-template-columns: repeat(7, 1fr);
 		align-items: center;
-		gap: 6rem;
+		gap: 7.6rem;
 		position: inherit;
 		width: 100%;
 		max-width: 126rem;
